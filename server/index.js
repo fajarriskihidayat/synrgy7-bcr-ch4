@@ -18,6 +18,8 @@ const onReq = (req, res) => {
     readStaticFiles(url, res, "image/png");
   } else if (url.match(".jpg$")) {
     readStaticFiles(url, res, "image/jpg");
+  } else {
+    getHtml("404.html", res);
   }
 };
 

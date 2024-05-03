@@ -19,14 +19,14 @@
     <!-- Owl Carousel -->
     <link
       rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/images/owl.carousel.min.css"
       integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g=="
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
     <link
       rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/images/owl.theme.default.min.css"
       integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw=="
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
@@ -135,7 +135,7 @@
               data-aos-duration="1000"
               data-aos-offset="0"
             >
-              <img src="./assets/img_car.png" alt="Car" />
+              <img src="./images/img_car.png" alt="Car" />
             </div>
           </div>
         </section>
@@ -237,59 +237,14 @@
                 </div>
               </div>
               <div class="col-lg-2">
-                <button class="btn text-light" id="btn-cari">Cari Mobil</button>
+                <button class="btn text-light" disabled id="btn-cari">
+                  Cari Mobil
+                </button>
               </div>
             </div>
           </form>
-          <div id="filtered-car" class="row">
-            <div class="col-md-6 col-lg-4 mb-3">
-              <div class="card" style="border: 1px solid #d6d6d6e3">
-                <img
-                  src="./images/car01.min.jpg"
-                  class="card-img-top card-img-car"
-                  alt="car"
-                />
-                <div class="card-body p-2">
-                  <h5 class="body-14-reguler">Nama/Tipe Mobil</h5>
-                  <h5 class="card-title fw-bold">Rp 430.000 / hari</h5>
-                  <p class="card-text body-14-light">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                    do eiusmod tempor incididunt ut labore et dolore magna
-                    aliqua.
-                  </p>
-                </div>
-                <ul
-                  class="list-group list-group-flush border-0 body-14-light px-2"
-                >
-                  <li class="list-group-item border-0 px-0">
-                    <img src="./assets/svg/fi_users.svg" class="me-2" alt="" />2
-                    Orang
-                  </li>
-                  <li class="list-group-item border-0 px-0">
-                    <img
-                      src="./assets/svg/Vector.svg"
-                      class="me-2"
-                      alt=""
-                    />Manual
-                  </li>
-                  <li class="list-group-item border-0 px-0">
-                    <img
-                      src="./assets/svg/fi_calendar.svg"
-                      class="me-2"
-                      alt=""
-                    />Tahun 2022
-                  </li>
-                </ul>
-                <div class="p-2">
-                  <button
-                    class="btn btn-success btn-lg d-block w-100 body-14-bold border-0"
-                  >
-                    Pilih Mobil
-                  </button>
-                </div>
-              </div>
-            </div>
-          </div>
+
+          <div id="filtered-car" class="row"></div>
         </div>
       </section>
     </main>
@@ -309,11 +264,11 @@
       <div>
         <p>Connect with us</p>
         <div class="d-flex gap-3">
-          <img src="./assets/icon_facebook.png" alt="fb" />
-          <img src="./assets/icon_instagram.png" alt="ig" />
-          <img src="./assets/icon_twitter.png" alt="twitter" />
-          <img src="./assets/icon_mail.png" alt="email" />
-          <img src="./assets/icon_twitch.png" alt="twitch" />
+          <img src="./images/icon_facebook.png" alt="fb" />
+          <img src="./images/icon_instagram.png" alt="ig" />
+          <img src="./images/icon_twitter.png" alt="twitter" />
+          <img src="./images/icon_mail.png" alt="email" />
+          <img src="./images/icon_twitch.png" alt="twitch" />
         </div>
       </div>
       <div>
@@ -340,7 +295,11 @@
       referrerpolicy="no-referrer"
     ></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
     <script src="./scripts/script.js"></script>
+    <script src="./scripts/component.js"></script>
+    <script src="./scripts/car.js"></script>
+    <script src="./scripts/app.js"></script>
 
     <script>
       AOS.init();

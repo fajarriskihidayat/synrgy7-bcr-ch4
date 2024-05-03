@@ -31,7 +31,12 @@ footer {
 }
 
 .btn:hover {
-  background-color: #5cb85fb4;
+  background-color: #138517b4;
+}
+
+.btn:disabled {
+  background-color: #5cb85f;
+  opacity: 0.5;
 }
 
 nav .offcanvas a.nav-link {
